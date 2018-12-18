@@ -4,9 +4,12 @@ public class checkYear {
         java.util.Scanner input = new java.util.Scanner(System.in);
         int year = input.nextInt();
         boolean flag = true;
-        if (year % 4 == 0){
-            if (year % 100 == 0){
-                if (year % 400 != 0){
+        boolean	isDivisibleBy4	=	year	%	4 == 0; 
+        if (isDivisibleBy4){
+            boolean	isDivisibleBy100	=	year	%	100 == 0;  
+            if (isDivisibleBy100){
+                 boolean	isDivisibleBy400	=	year	%	400 == 0; 
+                if (isDivisibleBy400){
                     flag = false;
                 }
             }
